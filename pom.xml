@@ -61,9 +61,6 @@
         </dependencies>
     </dependencyManagement>
 
-    <modules>
-    </modules>
-
     <distributionManagement>
         <repository>
             <id>chic.deploy</id>
