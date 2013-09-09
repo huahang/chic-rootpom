@@ -34,6 +34,7 @@
         <spongycastle.version>1.47.0.3</spongycastle.version>
         <okhttp.version>1.2.1</okhttp.version>
         <retrofit.version>1.2.1</retrofit.version>
+        <picasso.version>2.0.1</picasso.version>
     </properties>
 
     <dependencyManagement>
@@ -68,6 +69,16 @@
                 <groupId>com.squareup.retrofit</groupId>
                 <artifactId>retrofit-converters</artifactId>
                 <version>${retrofit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.squareup.picasso</groupId>
+                <artifactId>picasso</artifactId>
+                <version>${picasso.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.squareup.picasso</groupId>
+                <artifactId>picasso-pollexor</artifactId>
+                <version>${picasso.version}</version>
             </dependency>
             <!-- test dependencies -->
             <dependency>
