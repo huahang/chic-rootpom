@@ -32,25 +32,42 @@
         <guava.version>14.0.1</guava.version>
         <junit.version>4.11</junit.version>
         <spongycastle.version>1.47.0.3</spongycastle.version>
+        <okhttp.version>1.2.1</okhttp.version>
+        <retrofit.version>1.2.1</retrofit.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <!-- 3rd party release dependencies -->
+            <!-- release dependencies -->
             <dependency>
-                <groupId>com.google.guava</groupId>
-                <artifactId>guava</artifactId>
-                <version>${guava.version}</version>
+                <groupId>com.google.zxing</groupId>
+                <artifactId>core</artifactId>
+                <version>2.2</version>
             </dependency>
             <dependency>
-                <groupId>com.google.protobuf</groupId>
-                <artifactId>protobuf-java</artifactId>
-                <version>${protobuf.version}</version>
+                <groupId>com.squareup.okhttp</groupId>
+                <artifactId>okhttp</artifactId>
+                <version>${okhttp.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.madgag</groupId>
-                <artifactId>sc-light-jdk15on</artifactId>
-                <version>${spongycastle.version}</version>
+                <groupId>com.squareup.okhttp</groupId>
+                <artifactId>okhttp-apache</artifactId>
+                <version>${okhttp.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.squareup.okhttp</groupId>
+                <artifactId>okhttp-protocols</artifactId>
+                <version>${okhttp.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.squareup.retrofit</groupId>
+                <artifactId>retrofit</artifactId>
+                <version>${retrofit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.squareup.retrofit</groupId>
+                <artifactId>retrofit-converters</artifactId>
+                <version>${retrofit.version}</version>
             </dependency>
             <!-- test dependencies -->
             <dependency>
